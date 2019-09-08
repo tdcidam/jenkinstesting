@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('') {
       steps {
-        git(url: 'https://Y439929@stash.kp.org/scm/infra/iam-11g.git', branch: 'master', poll: true, credentialsId: 'Stash')
+        git(url: 'ssh://git@stash.kp.org/infra/iam-11g.git', branch: 'master', credentialsId: 'Stash')
       }
     }
   }
