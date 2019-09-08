@@ -11,7 +11,7 @@ pipeline {
     }
     stage('Print Message') {
       when{
-        expression { params.host1 == 'host1' }
+        expression { params.host1 == 'host2' }
       }
       steps {
         echo 'HI '
