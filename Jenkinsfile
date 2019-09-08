@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  parameters {
+        booleanParam(defaultValue: true, description: '', name: 'host1')
+    }
   stages {
     stage('Pull Git Repository') {
       steps {
